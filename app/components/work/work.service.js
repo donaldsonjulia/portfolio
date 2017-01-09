@@ -3,7 +3,7 @@ angular.module('portfolio').service('workService', workService);
 function workService() {
 
   this.getWork = function() {
-    console.log(this.projects);
+    console.log('getting work via workService');
     return this.projects;
   };
 
