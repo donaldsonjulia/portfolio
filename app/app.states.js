@@ -9,6 +9,8 @@ angular
                 return workService.getWork();
               }
             }
-
-            });
+          }).state('home', {
+            url: '/',
+            component: 'jdHome'
+          });
         });

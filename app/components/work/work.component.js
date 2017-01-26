@@ -8,8 +8,6 @@ angular
       controller: WorkController
     });
 
-function WorkController(){
-
+function WorkController() {
     console.log('work component controller!');
-
 }
