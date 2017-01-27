@@ -1,8 +1,9 @@
 .c-social-media {
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include align-items(center);
+    @include display(flex);
+    @include justify-content(space-between);
+    margin: 0 auto;
     width: 150px;
 
     &__icon {
