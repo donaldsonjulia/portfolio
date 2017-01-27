@@ -1,2 +1,2 @@
-.c-social-media__icon{width:25px;display:block}object[type="image/svg+xml"]{pointer-events:none}
+@import url(normalize.css);.c-social-media{display:flex;justify-content:space-between;align-items:center;width:150px}.c-social-media__icon{width:25px}
 /*# sourceMappingURL=main.min.css.map */

@@ -1,9 +1,22 @@
 
-.c-social-media__icon {
-  width: 25px;
-  display: block;
-}
+/* ==========================================================================
+ * Styles
+ * ========================================================================== */
 
-object[type="image/svg+xml"] {
-  pointer-events: none;
-}
+/* Vendor */
+@import "normalize.css";
+
+/* Utilities */
+@import "1_utilities/variables";
+
+/* Base */
+@import "2_base/base";
+
+/* Components */
+@import "3_components/c-hero";
+@import "3_components/c-social-media";
+
+/* Layout */
+@import "4_layout/layout";
+
+/* Helpers */

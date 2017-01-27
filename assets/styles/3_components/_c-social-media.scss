@@ -1,0 +1,12 @@
+.c-social-media {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+
+    &__icon {
+        width: 25px;
+    }
+
+}
