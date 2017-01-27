@@ -1,74 +1,25 @@
 /* ==========================================================================
  * Layout
  * ========================================================================== */
+ body {
+   overflow: hidden;
+ }
 
 .l-section {
-      @include justify-content(center);
+      @include outer-container();
       @include display(flex);
       min-height: 100vh;
-      width: 100%;
+
+      @media screen and (min-width: 500px) {
+           @include justify-content(center);
+         }
 }
 
 .l-container {
-      border: 1px solid #000;
-      margin: 10px;
-      max-width: 800px;
-      width: 100%;
+      @include span-columns(12);
+      border: 1px solid #ccc;
+
+      @media screen and (min-width: 500px) {
+           @include span-columns(10);
+         }
 }
-
-
-
-
-
-
-
-// J.Milner Styles below
-// .l-section {
-//     -webkit-box-align: center;
-//     -ms-flex-align: center;
-//     align-items: center;
-//     background-color: #fcfcfd;
-//     display: -webkit-box;
-//     display: -ms-flexbox;
-//     display: flex;
-//     -webkit-box-flex: 1;
-//     -ms-flex: 1;
-//     flex: 1;
-//     position: relative;
-// }
-//
-// @media screen and (max-width: 799px) {
-//     .l-section {
-//         min-height: 100vh;
-//     }
-// }
-//
-// @media screen and (min-width: 800px) {
-//     .l-section {
-//         -webkit-box-pack: center;
-//         -ms-flex-pack: center;
-//         justify-content: center;
-//     }
-// }
-//
-// @media screen and (max-width: 799px) {
-//     .l-section::after {
-//         border: 2px solid #39f;
-//         bottom: 0;
-//         content: "";
-//         left: 0;
-//         margin: 1.5rem;
-//         pointer-events: none;
-//         position: absolute;
-//         right: 0;
-//         top: 0;
-//     }
-// }
-//
-// .l-container {
-//     margin-left: auto;
-//     margin-right: auto;
-//     max-width: 1200px;
-//     max-width: 75rem;
-//     width: 100%;
-// }

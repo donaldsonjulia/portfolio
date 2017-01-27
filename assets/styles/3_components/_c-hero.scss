@@ -1,12 +1,13 @@
 .c-hero {
+    margin-top: 10%;
     position: relative;
-    width: 100%;
+
 
     &__photo {
       position: absolute;
       right: 15px;
       top: 25px;
-      width: 190px;
+      width: 200px;
       z-index: -1;
     }
 
@@ -14,7 +15,7 @@
       position: absolute;
       right: 0;
       top: 25px;
-      width: 280px;
+      width: 290px;
       z-index: -2;
     }
 
@@ -22,13 +23,13 @@
       position: absolute;
       right: 20px;
       top: 235px;
-      width: 220px;
+      width: 240px;
     }
 
     &__name {
       font-size: 24px;
-      left: 15%;
-      top: 310px;
+      left: 10%;
+      top: 320px;
       text-align: left;
       position: absolute;
       width: 100%;
@@ -36,8 +37,8 @@
 
     &__title {
       font-size: 18px;
-      right: 15%;
-      top: 340px;
+      right: 10%;
+      top: 350px;
       text-align: right;
       position: absolute;
       width: 100%;
@@ -45,6 +46,7 @@
 
     &__content {
       position: absolute;
+      top: 380px;
       width: 100%;
     }
 
