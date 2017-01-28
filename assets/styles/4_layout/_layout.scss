@@ -10,7 +10,7 @@
       @include display(flex);
       min-height: 100vh;
 
-      @media screen and (min-width: 500px) {
+      @media screen and (min-width: 700px) {
            @include justify-content(center);
          }
 }
@@ -19,7 +19,7 @@
       @include span-columns(12);
       border: 1px solid #ccc;
 
-      @media screen and (min-width: 500px) {
+      @media screen and (min-width: 900px) {
            @include span-columns(10);
          }
 }

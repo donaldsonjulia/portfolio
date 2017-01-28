@@ -2,37 +2,12 @@
     margin-top: calc(100vh/8);
     position: relative;
 
-    &__photo {
-      background-image: url('../../assets/img/hero_headshot.jpg');
-      background-size: cover;
+    &__image {
+      top: 0;
       position: absolute;
-      right: 15px;
-      top: 25px;
-      width: 200px;
-      height: 263px;
-      z-index: 2;
-    }
-
-    &__banner {
-      background-image: url('../../assets/img/hero_banner.png');
-      background-size: cover;
-      position: absolute;
-      right: 0;
-      top: 25px;
-      width: 290px;
-      height: 190px;
-      z-index: 1;
-    }
-
-    &__logo {
-      background-image: url('../../assets/img/hero_logo.png');
-      background-size: cover;
-      position: absolute;
-      right: 20px;
-      top: 245px;
-      width: 240px;
-      height: 80px;
-      z-index: 3;
+      width: 100%;
+      @include display(flex);
+      @include justify-content(center);
     }
 
     &__headline {
@@ -41,6 +16,10 @@
       width: 100%;
       @include display(flex);
       @include justify-content(center);
+
+      @media screen and (min-width: 700px) {
+        top: 500px;
+      }
     }
 
 
@@ -50,6 +29,10 @@
       width: 100%;
       @include display(flex);
       @include justify-content(center);
+
+      @media screen and (min-width: 700px) {
+        top: 565px;
+      }
     }
 
 
