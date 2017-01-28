@@ -3,11 +3,33 @@
     @include align-items(center);
     @include display(flex);
     @include justify-content(space-between);
-    // margin: 0 auto;
     width: 200px;
+
+    @media screen and (min-width: 700px) {
+      width: 660px;
+      @include justify-content(flex-start);
+    }
 
     &__icon {
         width: 25px;
+
+        @media screen and (min-width: 700px) {
+          width: 30px;
+          margin-left: calc(140px/6);
+          margin-right: calc(140px/6);
+        }
+    }
+
+    &__icon:first-child {
+      @media screen and (min-width: 700px) {
+        margin-left: calc(75px/2);
+      }
+    }
+
+    &__icon:last-child {
+      @media screen and (min-width: 700px) {
+        margin-right: calc(75px/2);
+      }
     }
 
 }

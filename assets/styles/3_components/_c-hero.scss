@@ -1,9 +1,8 @@
 .c-hero {
-    margin-top: calc(100vh/8);
     position: relative;
 
     &__image {
-      top: 0;
+      top: 15px;
       position: absolute;
       width: 100%;
       @include display(flex);
@@ -31,7 +30,8 @@
       @include justify-content(center);
 
       @media screen and (min-width: 700px) {
-        top: 565px;
+        top: 270px;
+        // @include justify-content(flex-start);
       }
     }
 
