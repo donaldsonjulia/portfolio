@@ -3,7 +3,7 @@
     @include align-items(center);
     @include display(flex);
     @include justify-content(space-between);
-    margin: 0 auto;
+    // margin: 0 auto;
     width: 200px;
 
     &__icon {
