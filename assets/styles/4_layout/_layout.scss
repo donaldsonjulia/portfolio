@@ -1,10 +1,6 @@
 /* ==========================================================================
  * Layout
  * ========================================================================== */
- // body {
- //   overflow: hidden;
- // }
-
 
 .l-section {
       @include outer-container();
@@ -19,7 +15,6 @@
 
 .l-container {
       @include span-columns(12);
-      border: 1px solid #ccc;
       height: 100%;
 
       @media screen and (min-width: 900px) {
