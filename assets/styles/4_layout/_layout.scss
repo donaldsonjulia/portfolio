@@ -9,6 +9,7 @@
 .l-section {
       @include outer-container();
       @include display(flex);
+      @include align-items(center);
       min-height: 100vh;
 
       @media screen and (min-width: 700px) {

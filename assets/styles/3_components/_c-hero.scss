@@ -1,6 +1,7 @@
 .c-hero {
     position: relative;
-    
+    min-height: 550px;
+
     &__image {
       top: 15px;
       position: absolute;
@@ -16,6 +17,10 @@
       @include display(flex);
       @include justify-content(center);
 
+      @media screen and (min-width: 400px) {
+        top: 385px;
+      }
+
       @media screen and (min-width: 700px) {
         top: 500px;
       }
@@ -29,9 +34,12 @@
       @include display(flex);
       @include justify-content(center);
 
+      @media screen and (min-width: 400px) {
+        top: 445px;
+      }
+
       @media screen and (min-width: 700px) {
         top: 270px;
-        // @include justify-content(flex-start);
       }
     }
 
