@@ -15,20 +15,20 @@
 
         @media screen and (min-width: 700px) {
           width: 30px;
-          margin-left: calc(140px/6);
-          margin-right: calc(140px/6);
+          margin-left: calc(120px/6);
+          margin-right: calc(120px/6);
         }
     }
 
     &__icon:first-child {
       @media screen and (min-width: 700px) {
-        margin-left: calc(75px/2);
+        margin-left: calc(95px/2);
       }
     }
 
     &__icon:last-child {
       @media screen and (min-width: 700px) {
-        margin-right: calc(75px/2);
+        margin-right: calc(95px/2);
       }
     }
 

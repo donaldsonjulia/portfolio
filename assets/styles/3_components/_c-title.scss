@@ -1,8 +1,17 @@
 .c-title {
+  position: relative;
+
 
   &__name {
     font-size: 24px;
     text-align: left;
+
+    @media screen and (min-width: 700px) {
+      font-size: 26px;
+      position: absolute;
+      top: -473px;
+      left: 0px;
+    }
 
   }
 
@@ -10,11 +19,24 @@
     font-size: 18px;
     text-align: right;
 
+    @media screen and (min-width: 700px) {
+      font-size: 20px;
+      position: absolute;
+      top: -5px;
+      right: 0px;
+    }
+
   }
 
   &--hero {
     max-width: 275px;
     width: 70%;
+
+    @media screen and (min-width: 700px) {
+      max-width: 660px;
+      width: 100%;
+    }
+
   }
 
 }

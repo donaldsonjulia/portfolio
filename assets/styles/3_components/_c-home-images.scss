@@ -2,6 +2,12 @@
   position: relative;
   width: 660px;
 
+  &__photo, &__banner, &__logo {
+    transition: ease;
+    transition-property: all;
+    transition-duration: 0.5s;
+  }
+
 
   &__photo {
     background-image: url('../../assets/img/hero_headshot.jpg');
@@ -33,7 +39,7 @@
 
     @media screen and (min-width: 700px) {
       right: 325px;
-      top: 40px;
+      top: 50px;
       width: 335px;
     }
   }
