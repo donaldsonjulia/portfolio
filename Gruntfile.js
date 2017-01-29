@@ -22,18 +22,20 @@ module.exports = function(grunt) {
             },
             my_target: {
                 files: {
-                    'assets/libs/libs.min.js': ['assets/libs/libs.js']
+                    'assets/libs/libs.min.js': ['assets/libs/libs.js'],
+                    'app/dist/app.min.js': ['app/dist/app.js']
                 }
             }
         },
 
         concat: {
             options: {
-                separator: ';'
+                separator: ''
             },
             dist: {
                 files: {
-                    'assets/libs/libs.js': ['node_modules/angular/angular.js', 'node_modules/angular-ui-router/release/angular-ui-router.js', 'node_modules/jquery/dist/jquery.js']
+                    'assets/libs/libs.js': ['node_modules/angular/angular.min.js', 'node_modules/angular-ui-router/release/angular-ui-router.min.js'],
+                    'app/dist/app.js': ['app/app.module.js', 'app/app.states.js', 'app/components/**/*.js']
                 }
             }
         },

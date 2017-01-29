@@ -3,5 +3,5 @@ angular
     .controller('AboutController', AboutController);
 
 function AboutController(){
-      console.log('about!!!');
+    
 }
