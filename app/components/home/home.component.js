@@ -2,7 +2,7 @@ angular
     .module('portfolio')
     .component('jdHome', {
       bindings: {},
-      templateUrl: './app/components/home/home.view.html',
+      templateUrl: './portfolio/app/components/home/home.view.html',
       controller: HomeController
     });
 

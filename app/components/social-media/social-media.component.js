@@ -2,7 +2,7 @@ angular
     .module('portfolio')
     .component('jdSocialMedia', {
       bindings: {},
-      templateUrl: './app/components/social-media/social-media.view.html',
+      templateUrl: './portfolio/app/components/social-media/social-media.view.html',
       controller: SocialMediaCtrl
     });
 
