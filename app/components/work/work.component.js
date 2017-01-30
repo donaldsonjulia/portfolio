@@ -4,7 +4,7 @@ angular
       bindings: {
         work: '<'
       },
-      templateUrl:'./portfolio/app/components/work/work.view.html',
+      templateUrl:'./app/components/work/work.view.html',
       controller: WorkController
     });
 

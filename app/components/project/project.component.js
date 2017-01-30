@@ -4,7 +4,7 @@ angular
       bindings: {
         project: '<'
       },
-      templateUrl: './portfolio/app/components/project/project.view.html',
+      templateUrl: './app/components/project/project.view.html',
       controller: ProjectController
 });
 
