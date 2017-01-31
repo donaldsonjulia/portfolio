@@ -1,3 +1,5 @@
-# Portfolio
+# Personal Site / Portfolio
 
-### In-progress portfolio website built using AngularJS v.1.5.8
+# http://juliadonaldson.design
+
+### Constantly evolving, in-progress portfolio website built using AngularJS v.1.6.1
