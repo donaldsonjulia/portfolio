@@ -18,6 +18,10 @@
           margin-left: calc(120px/6);
           margin-right: calc(120px/6);
         }
+
+        &:hover svg {
+          // fill: blue;
+        }
     }
 
     &__icon:first-child {
