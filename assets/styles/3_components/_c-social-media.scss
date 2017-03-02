@@ -1,39 +1,36 @@
 .c-social-media {
-
     @include align-items(center);
     @include display(flex);
     @include justify-content(space-between);
     width: 200px;
-
+    margin: 0 auto;
     @media screen and (min-width: 700px) {
-      width: 660px;
-      @include justify-content(flex-start);
+        width: 660px;
+        @include justify-content(flex-start);
     }
 
     &__icon {
         width: 25px;
-
         @media screen and (min-width: 700px) {
-          width: 30px;
-          margin-left: calc(120px/6);
-          margin-right: calc(120px/6);
+            width: 30px;
+            margin-left: calc(120px/6);
+            margin-right: calc(120px/6);
         }
 
         &:hover svg {
-          // fill: blue;
+            fill: blue;
         }
     }
 
     &__icon:first-child {
-      @media screen and (min-width: 700px) {
-        margin-left: calc(95px/2);
-      }
+        @media screen and (min-width: 700px) {
+            margin-left: calc(95px/2);
+        }
     }
 
     &__icon:last-child {
-      @media screen and (min-width: 700px) {
-        margin-right: calc(95px/2);
-      }
+        @media screen and (min-width: 700px) {
+            margin-right: calc(95px/2);
+        }
     }
-
 }

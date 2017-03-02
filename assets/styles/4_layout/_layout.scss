@@ -3,21 +3,14 @@
  * ========================================================================== */
 
 .l-section {
-      @include outer-container();
+      @include grid-container;
       @include display(flex);
       @include align-items(center);
       min-height: 100vh;
-
-      @media screen and (min-width: 700px) {
-           @include justify-content(center);
-         }
+      max-width: 1200px;
+      margin: 0 auto;
 }
 
 .l-container {
-      @include span-columns(12);
-      height: 100%;
-
-      @media screen and (min-width: 900px) {
-           @include span-columns(10);
-         }
+      @include grid-column(12);
 }

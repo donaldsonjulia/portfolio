@@ -7,7 +7,7 @@ module.exports = function(grunt) {
                     style: 'compressed',
                     loadPath: [
                         'node_modules/bourbon/app/assets/stylesheets',
-                        'node_modules/bourbon-neat/app/assets/stylesheets',
+                        'node_modules/bourbon-neat/core',
 
                     ]
                 },

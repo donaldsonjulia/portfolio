@@ -3,45 +3,37 @@
     min-height: 550px;
 
     &__image {
-      top: 15px;
-      position: absolute;
-      width: 100%;
-      @include display(flex);
-      @include justify-content(center);
+        top: 15px;
+        position: absolute;
+        @include grid-column(12);
+        @include display(flex);
+        @include justify-content(center);
     }
 
     &__headline {
-      top: 350px;
-      position: absolute;
-      width: 100%;
-      @include display(flex);
-      @include justify-content(center);
-
-      @media screen and (min-width: 400px) {
-        top: 385px;
-      }
-
-      @media screen and (min-width: 700px) {
-        top: 500px;
-      }
+        top: 350px;
+        position: absolute;
+        @include grid-column(12);
+        @include display(flex);
+        @include justify-content(center);
+        @media screen and (min-width: 400px) {
+            top: 385px;
+        }
+        @media screen and (min-width: 700px) {
+            top: 500px;
+        }
     }
-
 
     &__content {
-      position: absolute;
-      top: 410px;
-      width: 100%;
-      @include display(flex);
-      @include justify-content(center);
+        position: absolute;
+        top: 410px;
+        @include grid-column(12);
 
-      @media screen and (min-width: 400px) {
-        top: 445px;
-      }
-
-      @media screen and (min-width: 700px) {
-        top: 270px;
-      }
+        @media screen and (min-width: 400px) {
+            top: 445px;
+        }
+        @media screen and (min-width: 700px) {
+            top: 270px;
+        }
     }
-
-
 }
