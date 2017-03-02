@@ -5,7 +5,7 @@
     &__image {
         top: 15px;
         position: absolute;
-        @include grid-column(12);
+        width: 100%;
         @include display(flex);
         @include justify-content(center);
     }
@@ -13,7 +13,7 @@
     &__headline {
         top: 350px;
         position: absolute;
-        @include grid-column(12);
+        width: 100%;
         @include display(flex);
         @include justify-content(center);
         @media screen and (min-width: 400px) {
@@ -27,13 +27,14 @@
     &__content {
         position: absolute;
         top: 410px;
-        @include grid-column(12);
-
+        width: 100%;
+        @include display(flex);
+        @include justify-content(center);
         @media screen and (min-width: 400px) {
             top: 445px;
         }
         @media screen and (min-width: 700px) {
-            top: 270px;
+            top: 255px;
         }
     }
 }

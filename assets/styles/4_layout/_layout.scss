@@ -3,14 +3,18 @@
  * ========================================================================== */
 
 .l-section {
-      @include grid-container;
+
+      // @include grid-container;
       @include display(flex);
       @include align-items(center);
       min-height: 100vh;
-      max-width: 1200px;
-      margin: 0 auto;
+      width: 100%;
+
 }
 
 .l-container {
-      @include grid-column(12);
+      @include grid-container;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
 }
