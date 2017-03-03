@@ -1,0 +1,24 @@
+.h-slide {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.h-slide.ng-enter,
+.h-slide.ng-leave {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.h-slide.ng-enter {
+    left: 100%;
+}
+.h-slide.ng-enter-active {
+    left: 0;
+}
+.h-slide.ng-leave {
+    left: 0;
+}
+.h-slide.ng-leave-active {
+    left: -100%;
+}
