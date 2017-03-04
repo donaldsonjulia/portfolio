@@ -1,16 +1,21 @@
 angular
     .module('portfolio')
-    .config(function($stateProvider){
-            $stateProvider.state('work', {
-              url: '/work',
-              component: 'jdWork',
-            resolve: {
-              work: function(workService) {
-                return workService.getWork();
-              }
-            }
-          }).state('home', {
+    .config(function($stateProvider) {
+        $stateProvider.state('home', {
             url: '/',
-            component: 'jdHome'
-          });
+            views: {
+              content: {component: 'jdHome'}
+            }
+        }).state('work', {
+            url: '/work',
+            views: {
+              nav: { component: 'jdNav' },
+              content: { component: 'jdWork' }
+            },
+            resolve: {
+                work: function(workService) {
+                    return workService.getWork();
+                }
+            }
         });
+    });

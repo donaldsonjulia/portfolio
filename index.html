@@ -9,13 +9,15 @@
 </head>
 
 <body data-ng-app="portfolio">
-
-  <ui-view class="h-fade" data-ng-cloak></ui-view>
+  
+  <div ui-view="nav" class="h-fade"></div>
+  <div ui-view="content" class="h-fade"></div>
 
     <script src="./assets/libs/libs.min.js"></script>
     <script src="./node_modules/angular-animate/angular-animate.min.js"></script>
     <script src="./app/app.module.js"></script>
     <script src="./app/app.states.js"></script>
+    <script src="./app/components/navigation/navigation.component.js"></script>
     <script src="./app/components/home/home.component.js"></script>
     <script src="./app/components/home-menu/home-menu.component.js"></script>
     <script src="./app/components/work/work.service.js"></script>
