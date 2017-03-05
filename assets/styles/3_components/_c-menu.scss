@@ -1,9 +1,12 @@
-.c-home-menu {
-    @include grid-collapse;
-    @media screen and (min-width: 700px) {
-        width: 660px;
-        margin: 0 auto;
-    }
+
+.c-menu {
+
+  &--home {
+      @include grid-collapse;
+      @media screen and (min-width: 700px) {
+          width: 660px;
+          margin: 0 auto;
+      }
 
     &__links {
         width: 250px;
@@ -23,4 +26,7 @@
             }
         }
     }
+  }
+
+
 }

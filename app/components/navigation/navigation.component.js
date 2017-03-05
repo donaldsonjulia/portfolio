@@ -6,19 +6,6 @@ angular
       controller: NavCtrl
     });
 
-    function NavCtrl($state) {
-
-      console.log($state.current);
-
-
-
-      this.viewable = false;
-
-      if ($state.current.name !== "home") {
-        console.log('in if statement');
-        this.viewable = true;
-      }
-
-      console.log(this.viewable);
+    function NavCtrl() {
 
     }
