@@ -8,4 +8,13 @@ angular
 
     function NavCtrl() {
 
+        this.open = function() {
+          document.getElementById("js-nav").style.width = "250px";
+          document.getElementById("js-content").style.marginLeft = "250px";
+ };
+
+        this.close = function() {
+          document.getElementById("js-nav").style.width = "0";
+          document.getElementById("js-content").style.marginLeft = "0";
+ };
     }

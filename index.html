@@ -10,8 +10,10 @@
 
 <body data-ng-app="portfolio">
 
-  <div ui-view="nav" class="h-fade"></div>
-  <div ui-view="content" class="h-fade"></div>
+  <div ui-view="nav"></div>
+  <main>
+     <div ui-view="content" id="js-content" class="h-fade"></div>
+  </main>
 
     <script src="./assets/libs/libs.min.js"></script>
     <script src="./node_modules/angular-animate/angular-animate.min.js"></script>

@@ -1,32 +1,40 @@
-
 .c-menu {
+    &--nav {
 
-  &--home {
-      @include grid-collapse;
-      @media screen and (min-width: 700px) {
-          width: 660px;
-          margin: 0 auto;
-      }
+        &__links {
+            width: 250px;
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+    }
 
-    &__links {
-        width: 250px;
-        display: flex;
-        justify-content: space-around;
-        list-style: none;
-        margin: 0;
-        padding: 0;
+    &--home {
+        // @include grid-collapse;
         @media screen and (min-width: 700px) {
-            flex-direction: column;
-            padding-left: 50px;
+            width: 660px;
+            margin: 0 auto;
         }
 
-        li {
+        &__links {
+            width: 250px;
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            margin: 0;
+            padding: 0;
             @media screen and (min-width: 700px) {
-                margin: 10px 0;
+                flex-direction: column;
+                padding-left: 50px;
+            }
+
+            li {
+                @media screen and (min-width: 700px) {
+                    margin: 10px 0;
+                }
             }
         }
     }
-  }
-
-
 }

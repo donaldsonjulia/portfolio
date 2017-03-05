@@ -1,3 +1,7 @@
-<nav>
-  <jd-menu data-modifier="--nav"></jd-menu>
-</nav>
+<header class="c-header">
+  <a href="javascript:void(0)" class="c-header__nav-icon" data-ng-click="$ctrl.open()">open</a>
+  <div id="js-nav" class="c-nav">
+    <a href="javascript:void(0)" class="c-nav__close-btn" data-ng-click="$ctrl.close()">X</a>
+    <jd-menu data-modifier="--nav"></jd-menu>
+  </div>
+</header>
