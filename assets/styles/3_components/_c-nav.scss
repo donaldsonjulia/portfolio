@@ -1,24 +1,26 @@
-#js-content {
-    transition: margin-left 0.5s;
-    // padding: 20px;
-}
 
 .c-nav {
     background-color: aliceblue;
     height: 100%;
-    width: 0; /* 0 width - change this with JavaScript */
+    width: 0; /* 0 width - changes with Navigation component controller */
     position: fixed;
-    z-index: 1;
+    z-index: 5;
     top: 0;
     left: 0;
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the nav */
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s; /* transition timing to slide in the nav */
     &__close-btn {
         position: absolute;
         top: 0;
-        right: 25px;
-        font-size: 36px;
+        right: 20px;
+        font-size: 42px;
         margin-left: 50px;
+        text-decoration: none;
     }
+}
+
+#js-content {
+    position: relative; /* necessary so .h-fade animation absolute positioning does not cover header */
+    transition: margin-left 0.5s; /* match transition timing of nav sliding */
 }

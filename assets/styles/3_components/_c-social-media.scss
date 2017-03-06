@@ -3,28 +3,24 @@
         @include align-items(center);
         @include display(flex);
         @include justify-content(space-between);
-        width: 250px;
+        padding: 0 20px;
+
 
         &__icon {
+          svg {
             width: 25px;
-            @media screen and (min-width: 700px) {
-                width: 30px;
-            }
+          }
 
-            &:hover svg {
-                fill: lime;
-            }
+            // &:hover svg {
+            //     fill: lime;
+            // }
 
             &:first-child {
-                @media screen and (min-width: 700px) {
-                    padding-left: 50px;
-                }
+
             }
 
             &:last-child {
-                @media screen and (min-width: 700px) {
-                    padding-right: 50px;
-                }
+
             }
         }
     }
@@ -37,6 +33,7 @@
         width: 250px;
         @media screen and (min-width: 700px) {
             width: 335px;
+            float: left;
         }
 
         &__icon {

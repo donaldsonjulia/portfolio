@@ -1,7 +1,11 @@
 <header class="c-header">
-  <a href="javascript:void(0)" class="c-header__nav-icon" data-ng-click="$ctrl.open()">open</a>
-  <div id="js-nav" class="c-nav">
-    <a href="javascript:void(0)" class="c-nav__close-btn" data-ng-click="$ctrl.close()">X</a>
-    <jd-menu data-modifier="--nav"></jd-menu>
-  </div>
+    <a href="javascript:void(0)" class="c-header__menu-icon" data-ng-click="$ctrl.open()">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M4 10h24a2 2 0 0 0 0-4H4a2 2 0 0 0 0 4zm24 4H4a2 2 0 0 0 0 4h24a2 2 0 0 0 0-4zm0 8H4a2 2 0 0 0 0 4h24a2 2 0 0 0 0-4z"/></svg>
+        <div class="c-header__menu-icon-text">menu</div>
+    </a>
+    <div id="js-nav" class="c-nav">
+        <a href="javascript:void(0)" class="c-nav__close-btn" data-ng-click="$ctrl.close()">&#215;</a>
+        <jd-menu data-modifier="--nav"></jd-menu>
+        <jd-social-media data-modifier="--nav"></jd-social-media>
+    </div>
 </header>

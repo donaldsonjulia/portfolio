@@ -11,9 +11,10 @@
 <body data-ng-app="portfolio">
 
   <div ui-view="nav"></div>
-  <main>
-     <div ui-view="content" id="js-content" class="h-fade"></div>
+  <main id="js-content">
+  <div ui-view="content" class="h-fade"></div>
   </main>
+
 
     <script src="./assets/libs/libs.min.js"></script>
     <script src="./node_modules/angular-animate/angular-animate.min.js"></script>
@@ -21,6 +22,7 @@
     <script src="./app/app.states.js"></script>
     <script src="./app/components/navigation/navigation.component.js"></script>
     <script src="./app/components/home/home.component.js"></script>
+    <script src="./app/components/social-media/social-media.component.js"></script>
     <script src="./app/components/menu/menu.component.js"></script>
     <script src="./app/components/work/work.service.js"></script>
     <script src="./app/components/work/work.component.js"></script>

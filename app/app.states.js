@@ -4,6 +4,7 @@ angular
         $stateProvider.state('home', {
             url: '/',
             views: {
+              nav: { component: 'jdNav' },
               content: {component: 'jdHome'}
             }
         }).state('work', {

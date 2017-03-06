@@ -1,0 +1,25 @@
+.c-header {
+  background-color: aliceblue;
+  height: 30px;
+  padding-left: 10px;
+
+  &__menu-icon {
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+      svg {
+        width: 25px;
+      }
+
+      &:hover svg {
+        fill: lime;
+      }
+  }
+
+  &__menu-icon-text {
+    display: inline;
+    margin-left: 5px;
+  }
+
+}
