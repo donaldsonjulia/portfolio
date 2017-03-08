@@ -3,3 +3,9 @@
  * ========================================================================== */
 
 @include font-face('Quicksand', '../../assets/fonts/Quicksand/Quicksand-Regular', $file-formats: ttf);
+
+$navigation-side-padding: 30px;
+
+$base-font-size: 16px;
+
+$header-font-size: $base-font-size;

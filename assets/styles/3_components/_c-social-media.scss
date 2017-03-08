@@ -3,16 +3,18 @@
         @include align-items(center);
         @include display(flex);
         @include justify-content(space-between);
-        padding: 0 20px;
+        min-width: 190px;
 
 
         &__icon {
           svg {
-            width: 25px;
+            fill: #fff;
+            width: 32px;
+            height: 32px;
           }
 
             // &:hover svg {
-            //     fill: lime;
+            //     fill: magenta;
             // }
 
             &:first-child {
@@ -37,10 +39,8 @@
         }
 
         &__icon {
-            width: 25px;
-            @media screen and (min-width: 700px) {
-                width: 30px;
-            }
+            width: 32px;
+            height: 32px;
 
             &:hover svg {
                 fill: lime;
