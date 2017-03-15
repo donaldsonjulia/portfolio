@@ -7,21 +7,22 @@
     z-index: 5;
     top: 0;
     left: 0;
-    overflow-x: hidden;
+    overflow: hidden;
     padding-top: 60px;
     transition: 0.5s; /* transition timing to slide in the nav */
+
     &__close-btn {
         position: absolute;
         top: 0;
-        right: 20px;
+        right: 0;
         font-size: 42px;
-        margin-left: 50px;
         text-decoration: none;
         color: #fff;
         svg {
           fill: #fff;
         }
     }
+
     &__content {
       color: #fff;
       height: 40%;

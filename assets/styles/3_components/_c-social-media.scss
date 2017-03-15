@@ -4,6 +4,7 @@
         @include display(flex);
         @include justify-content(space-between);
         min-width: 190px;
+        margin: 30px 0;
 
 
         &__icon {
