@@ -8,7 +8,7 @@
     top: 0;
     left: 0;
     overflow: hidden;
-    padding-top: 60px;
+    padding-top: 70px;
     transition: 0.5s; /* transition timing to slide in the nav */
 
     &__close-btn {
@@ -18,27 +18,28 @@
         font-size: 42px;
         text-decoration: none;
         color: #fff;
+        cursor: pointer;
         svg {
           fill: #fff;
         }
+        &:hover {
+          svg {
+            fill: $nav-action-color;
+          }
+        }
+
     }
 
     &__content {
       color: #fff;
-      height: 40%;
       padding-left: $navigation-side-padding;
       padding-right: $navigation-side-padding;
     }
 
     &__footer {
-      height: 60%;
+      height: 150px;
+      background-image: url('../../assets/img/nav_footer.png');
+      border-right: 1px solid #000;
 
-      background-image: url('../../assets/img/hero_banner.png');
-      background-size: cover;
     }
-}
-
-#js-content {
-    position: relative; /* necessary so .h-fade animation absolute positioning does not cover header */
-    transition: margin-left 0.5s; /* match transition timing of nav sliding */
 }

@@ -19,3 +19,7 @@
       max-width: 1200px;
       margin: 0 auto;
 }
+
+.l-main {
+    position: relative; /* necessary so .h-fade animation absolute positioning does not cover header */
+}
