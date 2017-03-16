@@ -4,7 +4,7 @@ angular
         $stateProvider.state('home', {
             url: '/',
             views: {
-              nav: { component: 'jdNav' },
+              nav: {},
               content: {component: 'jdHome'}
             }
         }).state('work', {
@@ -17,6 +17,12 @@ angular
                 work: function(workService) {
                     return workService.getWork();
                 }
+            }
+        }).state('about', {
+            url: '/about',
+            views: {
+              nav: {component: 'jdNav'},
+              content: {component: 'jdAbout'}
             }
         });
     });
