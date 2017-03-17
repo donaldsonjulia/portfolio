@@ -1,0 +1,21 @@
+.c-project {
+  @include grid-column;
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+    &__hero-img {
+      @include grid-column(5);
+      border: 1px solid #ccc;
+    }
+    &__body {
+      @include grid-column(7);
+    }
+    &__title {
+    
+    }
+
+    &__text {
+
+    }
+
+}
