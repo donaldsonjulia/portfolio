@@ -11,7 +11,9 @@
       @include grid-column(7);
     }
     &__title {
-    
+      background-color: #000;
+      color: #fff;
+      padding: 5px 10px;
     }
 
     &__text {
