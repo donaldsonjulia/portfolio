@@ -59,7 +59,7 @@ function workService() {
       github: 'https://github.com/donaldsonjulia/TIY-All-Is-Well',
       projectSite: 'https://all-is-well.herokuapp.com/'
     },
-    tools: [tools.javascript, tools.css, tools.sass, tools.html, tools.rails, tools.foundation, tools.bem]
+    tools: [tools.javascript, tools.css, tools.sass, tools.html, tools.rails]
   };
   var project2 = {
     title: 'Wedding',
