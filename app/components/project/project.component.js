@@ -9,5 +9,5 @@ angular
 });
 
 function ProjectController() {
-  console.log('project contoller');
+  
 }

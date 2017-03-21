@@ -1,23 +1,114 @@
 .c-project {
-  @include grid-column;
-  margin-top: 20px;
-  margin-bottom: 10px;
+    @include grid-column;
+    margin-top: 20px;
+    margin-bottom: 10px;
 
     &__hero-img {
-      @include grid-column(5);
-      border: 1px solid #ccc;
+        border: 1px solid #ccc;
+        @include grid-column;
+        @media screen and (min-width: 1000px) {
+             @include grid-column(5);
+        }
     }
+
     &__body {
-      @include grid-column(7);
+        @include grid-column;
+        @media screen and (min-width: 1000px) {
+             @include grid-column(7);
+        }
     }
+
     &__title {
-      background-color: #000;
-      color: #fff;
-      padding: 5px 10px;
+
+        font-family: 'Overpass Mono';
+        background-color: #000;
+        color: #fff;
+        padding: 5px 10px;
+        margin-top: 1em;
+        @media screen and (min-width: 1000px) {
+            margin-top: 0;
+        }
     }
 
     &__text {
+      @media screen and (min-width: 600px) {
+      @include grid-column(6 of 7);
+    }
 
     }
 
+    &__links {
+      @media screen and (min-width: 600px) {
+      @include grid-column(1 of 7);
+    }
+      margin-top: 1em;
+    }
+
+    &__link {
+      margin-left: 10px;
+      margin-bottom: 10px;
+      @media screen and (min-width: 600px) {
+        float: right;
+      }
+
+      &:hover svg {
+        fill: $main-action-color;
+      }
+    }
+
+    &__tools {
+      @media screen and (min-width: 600px) {
+        @include grid-column;
+      }
+        list-style: none;
+        padding: 0;
+    }
+
+    &__tool {
+        background-color: lightcyan;
+        float: left;
+        padding: 3px 5px;
+        margin: 5px;
+        font-family: 'Overpass Mono';
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &--js {
+            background-color: hotpink;
+        }
+
+        &--css {
+            background-color: lightskyblue;
+        }
+
+        &--sass {
+            background-color: yellow;
+        }
+
+        &--html {
+            background-color: salmon;
+        }
+
+        &--rails {
+            background-color: plum;
+        }
+
+        &--bem {
+          background-color: aquamarine;
+        }
+
+        &--handlebars {
+          background-color: lightgreen;
+        }
+
+        &--angular {
+          background-color: mediumturquoise;
+        }
+
+        &--foundation {
+          background-color: pink;
+        }
+    }
 }
