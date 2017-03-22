@@ -11,6 +11,10 @@
       min-height: 100vh;
       width: 100%;
 
+      &--has-header {
+        @include align-items(flex-start);
+      }
+
 }
 
 .l-container {
