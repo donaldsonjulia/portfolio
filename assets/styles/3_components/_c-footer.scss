@@ -1,8 +1,12 @@
 .c-footer {
-  @include grid-column;
+  width: 100%;
+  height: 200px; /* change min-height of .l-section class if this number changes! */
+  background: linear-gradient(white, pink);
+  @include display(flex);
+  @include align-items(flex-end);
+  @include justify-content(center);
   &__copyright {
-    margin-top: 60px;
-    color: #c6c6c6;
+    color: #888;
     font-size: 12px;
     float: right;
   }

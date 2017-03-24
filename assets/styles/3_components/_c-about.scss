@@ -1,0 +1,32 @@
+.c-about {
+  @include display(flex);
+  @include align-items(center);
+  @include grid-column(11);
+  @include grid-shift(.5);
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  &__aside {
+    @include grid-column(4 of 11);
+    min-height: 1px;
+  }
+
+  &__content {
+    @include grid-column(7 of 11);
+  }
+
+  &__photo {
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  &__logo {
+    @include grid-column(4 of 7);
+    @include grid-shift(1.5 of 7);
+  }
+
+  &__bio {
+    @include grid-column;
+    text-indent: 50px;
+  }
+}
