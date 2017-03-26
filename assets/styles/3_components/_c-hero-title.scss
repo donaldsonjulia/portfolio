@@ -3,6 +3,7 @@
   min-width: 200px;
   max-width: 275px;
   cursor: default;
+  font-family: 'Overpass Mono';
 
   @media screen and (min-width: 700px) {
     max-width: 660px;
@@ -24,8 +25,9 @@
   }
 
   &__description {
-    font-size: 18px;
+    font-size: 16px;
     text-align: right;
+    line-height: 1.8;
 
     @media screen and (min-width: 700px) {
       font-size: 20px;
