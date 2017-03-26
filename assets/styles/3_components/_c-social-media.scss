@@ -30,6 +30,35 @@
         }
     }
 
+
+    &--desktop-nav {
+        @include align-items(center);
+        @include display(flex);
+        @include justify-content(space-between);
+        width: 160px;
+        margin-right: 15px;
+
+        &__icon {
+          svg {
+            fill: #fff;
+            width: 24px;
+            height: 24px;
+          }
+
+            &:hover svg {
+                fill: $nav-action-color;
+            }
+
+            &:first-child {
+
+            }
+
+            &:last-child {
+
+            }
+        }
+    }
+
     &--home {
         @include align-items(center);
         @include display(flex);

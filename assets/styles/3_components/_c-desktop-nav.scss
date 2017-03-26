@@ -1,0 +1,14 @@
+.c-desktop-nav {
+  display: none;
+
+  @media screen and (min-width: 700px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    @include display(flex);
+    @include align-items(center);
+    @include justify-content(space-between);
+    height: 50px; /* must be the same as .c-header height */
+  }
+}

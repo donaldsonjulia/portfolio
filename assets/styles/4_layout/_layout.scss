@@ -8,7 +8,7 @@
       // @include grid-container;
       @include display(flex);
       @include align-items(center);
-      min-height: calc(100vh - 150px - 200px); /* to account for page header and banner (150px) and footer (200px) unless using full-screen modifier below*/
+      min-height: calc(100vh - 160px - 200px); /* to account for page header and banner (110px + 50px) and footer (200px) unless using full-screen modifier below*/
       width: 100%;
 
       &--fullscreen {

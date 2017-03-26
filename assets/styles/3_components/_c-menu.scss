@@ -1,13 +1,40 @@
 .c-menu {
+      &__links {
+        font-family: 'Overpass Mono';
+        list-style: none;
+        padding: 0;
+
+          li {
+            font-size: 18px;
+          }
+      }
 
     &--nav {
         &__links {
-            list-style: none;
             margin: 10px 0;
-            padding: 0;
             li {
               margin: 15px 0;
-              font-size: 18px;
+            }
+            a {
+              color: #fff;
+              &:hover {
+                color: $nav-action-color;
+              }
+            }
+        }
+    }
+
+
+
+    &--desktop-nav {
+        &__links {
+            margin: 0;
+            li {
+              margin-left: 15px;
+              display: inline;
+            }
+            li:last-child {
+              display: none;
             }
             a {
               color: #fff;
@@ -29,9 +56,7 @@
             width: 250px;
             display: flex;
             justify-content: space-around;
-            list-style: none;
             margin: 0;
-            padding: 0;
             @media screen and (min-width: 700px) {
                 width: 100%;
                 flex-direction: column;
@@ -39,7 +64,6 @@
             }
 
             li {
-               font-size: 18px;
                 @media screen and (min-width: 700px) {
                     margin: 10px 0;
                 }
