@@ -14,6 +14,7 @@
 
 /* Base */
 @import "2_base/base";
+@import "2_base/forms";
 
 /* Components */
 @import "3_components/c-hero";
@@ -29,6 +30,9 @@
 @import "3_components/c-work";
 @import "3_components/c-project";
 @import "3_components/c-about";
+@import "3_components/c-button";
+@import "3_components/c-contact";
+
 
 /* Layout */
 @import "4_layout/layout";

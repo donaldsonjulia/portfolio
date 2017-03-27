@@ -2,7 +2,6 @@
  * Variables
  * ========================================================================== */
 
-// @include font-face('Quicksand', '../../assets/fonts/Quicksand/Quicksand-Regular', $file-formats: ttf);
 
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
@@ -10,12 +9,16 @@
 
 $navigation-side-padding: 30px;
 
+$base-font-family: 'Quicksand', sans-serif;
+
 $base-font-size: 16px;
+
+$base-font-color: #000;
+
+$header-font-family: 'Overpass Mono', sans-serif;
 
 $header-font-size: 20px;
 
 $main-action-color: mediumspringgreen;
 
 $nav-action-color: cyan;
-
-// $nav-action-color: $main-action-color;

@@ -1,0 +1,134 @@
+
+
+// // Breakpoints
+// $medium-screen: 600px;
+// $large-screen: 900px;
+//
+// // Typography
+// $base-font-family: 'Quicksand';
+// $heading-font-family: 'Overpass Mono';
+//
+// // Font Sizes
+// $base-font-size: 1em;
+//
+// // Line height
+// $base-line-height: 1.5;
+// $heading-line-height: 1.2;
+//
+// // Other Sizes
+// $base-border-radius: 3px;
+// $base-spacing: $base-line-height * 1em;
+// $small-spacing: $base-spacing / 2;
+// $base-z-index: 0;
+//
+// // Colors
+// $blue: #1565c0;
+// $dark-gray: #333;
+// $medium-gray: #999;
+// $light-gray: #ddd;
+//
+// // Font Colors
+// $base-font-color: $dark-gray;
+// $action-color: $blue;
+//
+// // Border
+// $base-border-color: $light-gray;
+// $base-border: 1px solid $base-border-color;
+//
+// // Background Colors
+// $base-background-color: #fff;
+// $secondary-background-color: tint($base-border-color, 75%);
+//
+// // Animations
+// $base-duration: 150ms;
+// $base-timing: ease;
+
+
+
+
+$_form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+$_form-box-shadow-focus: $_form-box-shadow, 0 0 5px rgba($main-action-color, 0.7);
+
+fieldset {
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  margin-bottom: 6px;
+  padding: 0;
+  font-family: $header-font-family;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-family: $header-font-family;
+}
+
+input,
+select,
+textarea {
+  display: block;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+}
+
+#{$all-text-inputs} {
+  appearance: none;
+  background-color: #fff;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  box-shadow: $_form-box-shadow;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+  padding: 8px;
+  transition: border-color 150ms ease;
+  width: 100%;
+
+  &:hover {
+    border-color: shade(lightgrey, 20%);
+  }
+
+  &:focus {
+    border-color: $main-action-color;
+    box-shadow: $_form-box-shadow-focus;
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: shade(#fff, 5%);
+    cursor: not-allowed;
+
+    &:hover {
+      border: 1px solid lightgrey;
+    }
+  }
+
+  &::placeholder {
+    color: tint($base-font-color, 40%);
+  }
+}
+
+textarea {
+  resize: vertical;
+}
+
+
+[type="checkbox"],
+[type="radio"] {
+  display: inline;
+  margin-right: 6px;
+}
+
+[type="file"] {
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+select {
+  margin-bottom: 12px;
+  width: 100%;
+}

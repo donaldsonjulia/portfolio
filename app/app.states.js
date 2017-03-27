@@ -24,5 +24,11 @@ angular
               nav: {component: 'jdNav'},
               content: {component: 'jdAbout'}
             }
+        }).state('contact', {
+            url:'/contact',
+            views: {
+              nav: {component: 'jdNav'},
+              content: {component: 'jdContact'}
+            }
         });
     });

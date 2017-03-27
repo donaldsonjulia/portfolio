@@ -1,0 +1,4 @@
+.c-contact {
+    @include grid-column(6);
+    @include grid-shift(3);
+}
