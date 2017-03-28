@@ -5,8 +5,16 @@ angular
       controller: ContactController
     });
 
-function ContactController(){
-    this.testClick = function() {
-      console.log('testing click');
+function ContactController($http){
+
+    this.formData = {
     };
+
+    this.testClick = function() {
+      formData = this.formData;
+      console.log(formData);
+    };
+
+
+
 }

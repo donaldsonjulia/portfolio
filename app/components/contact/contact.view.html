@@ -28,16 +28,13 @@
 <div class="l-section">
     <div class="l-container">
         <div class="c-contact">
-            <!-- <div class="c-contact__text">
-              <h3>Get in touch!</h3>
-            </div> -->
             <form class="c-contact__form">
                 <label for="name">your name</label>
-                <input name="name" type="text"></input>
+                <input name="name" type="text" ng-model="$ctrl.formData.name"></input>
                 <label for="_replyto">your email</label>
-                <input name="_replyto" type="email"></input>
+                <input name="_replyto" type="email" ng-model="$ctrl.formData.replyTo"></input>
                 <label for="message">your message</label>
-                <textarea name="message" rows="5"></textarea>
+                <textarea name="message" rows="5" ng-model="$ctrl.formData.message"></textarea>
                 <button type="submit" class="c-button c-contact__form-btn" ng-click="$ctrl.testClick()">Submit</button>
             </form>
         </div>

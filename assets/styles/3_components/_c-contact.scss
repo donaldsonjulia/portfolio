@@ -1,11 +1,6 @@
 .c-contact {
   padding: 40px 0;
 
-  &__text {
-    @include grid-column;
-    text-align: center;
-  }
-
   &__form {
     @include grid-column;
 
