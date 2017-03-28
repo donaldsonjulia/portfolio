@@ -26,4 +26,30 @@
             }
         }
     }
+
+    &__headline--large {
+      width: 90%;
+      @media screen and (min-width: 500px) {
+          width: 90%;
+      }
+      @media screen and (min-width: 650px) {
+          width: auto;
+      }
+
+      svg {
+          // fill: white;
+
+          @media screen and (min-width: 500px) {
+              height: auto;
+          }
+
+          @media screen and (min-width: 650px) {
+              height: 110px; /* change min-height of .l-section class if this number changes! */
+              width: auto;
+          }
+      }
+
+    }
+
+
 }
