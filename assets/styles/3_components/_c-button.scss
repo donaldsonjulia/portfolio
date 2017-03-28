@@ -1,7 +1,9 @@
 .c-button {
-  background-color: #ccffff;
+  // background-color: #ccffff;
+  background: linear-gradient(#ccffff, $main-action-color 140%);
   font-family: $header-font-family;
-  padding: 6px 12px;
+  text-align: center;
+  padding: 12px 18px;
   border: none;
   transition: all .15s ease;
   outline: none;
