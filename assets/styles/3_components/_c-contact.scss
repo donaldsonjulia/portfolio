@@ -1,6 +1,17 @@
 .c-contact {
   padding: 40px 0;
 
+  &__form-message {
+    @include grid-column;
+    text-align: center;
+    font-size: $header-font-size;
+    color: $main-action-color;
+
+      &--has-error {
+        color: red;
+      }
+  }
+
   &__form {
     @include grid-column;
 

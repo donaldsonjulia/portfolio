@@ -26,16 +26,20 @@
     </div>
 </div>
 <div class="l-section">
+    <div class="c-spinner" ng-class="{'c-spinner--is-active' : $ctrl.spinnerActive}">
+      <img class="c-spinner__icon" src="./assets/img/icons/ring-alt.svg" alt="spinner icon">
+    </div>
     <div class="l-container">
         <div class="c-contact">
-            <form class="c-contact__form">
+            <div class="c-contact__form-message" data-ng-class="{'c-contact__form-message--has-error' : $ctrl.formError}" data-ng-show="$ctrl.formMessage">{{$ctrl.formMessage}}</div>
+            <form class="c-contact__form" name="$ctrl.contactForm" data-ng-submit="$ctrl.submitForm()">
                 <label for="name">your name</label>
-                <input name="name" type="text" ng-model="$ctrl.formData.name"></input>
+                <input name="name" type="text" data-ng-model="$ctrl.formData.name" data-ng-required="true"></input>
                 <label for="_replyto">your email</label>
-                <input name="_replyto" type="email" ng-model="$ctrl.formData.replyTo"></input>
+                <input name="_replyto" type="email" data-ng-model="$ctrl.formData.replyTo" data-ng-required="true"></input>
                 <label for="message">your message</label>
-                <textarea name="message" rows="5" ng-model="$ctrl.formData.message"></textarea>
-                <button type="submit" class="c-button c-contact__form-btn" ng-click="$ctrl.testClick()">Submit</button>
+                <textarea name="message" rows="5" data-ng-model="$ctrl.formData.message" data-ng-required="true"></textarea>
+                <button type="submit" class="c-button c-contact__form-btn">Submit</button>
             </form>
         </div>
     </div>

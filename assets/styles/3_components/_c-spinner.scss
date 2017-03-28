@@ -1,0 +1,13 @@
+.c-spinner {
+  display: none;
+  position: absolute;
+  z-index: 1;
+
+  &__icon {
+    width: 80px;
+  }
+
+  &--is-active {
+    display: block;
+  }
+}
