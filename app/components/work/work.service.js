@@ -3,7 +3,6 @@ angular.module('portfolio').service('workService', workService);
 function workService() {
 
   this.getWork = function() {
-    console.log('getting work via workService');
     return this.projects;
   };
 
@@ -54,7 +53,7 @@ function workService() {
     title: 'All Is Well',
     heroUrl: 'assets/img/all-is-well/hero.png',
     heroAlt: 'project screenshot',
-    text: 'Blue bottle jean shorts williamsburg lyft franzen, helvetica vaporware pork belly. Slow-carb master cleanse flannel, crucifix lumbersexual bitters lo-fi venmo viral direct trade neutra health goth marfa subway tile retro.',
+    text: 'A web app that connects therapists with their clients and helps to diagnose behavioral patterns in between appointments',
     linkUrls: {
       github: 'https://github.com/donaldsonjulia/TIY-All-Is-Well',
       projectSite: 'https://all-is-well.herokuapp.com/'
@@ -62,10 +61,10 @@ function workService() {
     tools: [tools.javascript, tools.css, tools.sass, tools.html, tools.rails]
   };
   var project2 = {
-    title: 'Wedding',
+    title: "Caroline & Ephraim's Wedding",
     heroUrl: 'assets/img/wedding/hero.png',
     heroAlt: 'project screenshot',
-    text: 'Bushwick pop-up cliche, banh mi gentrify small batch fam. Pinterest chambray ennui, next level williamsburg bespoke subway tile. Lyft kale chips selvage, whatever jean shorts poke distillery. Pug pork belly fixie leggings. Squid air plant iceland pork belly chia street art.',
+    text: "A clean and simple landing page for my sister's upcoming wedding.",
     linkUrls: {
       github: 'https://github.com/donaldsonjulia/caroline-wedding',
       projectSite: 'http://www.carolineandephraim.com/'
@@ -76,13 +75,38 @@ function workService() {
     title: 'Gif Search',
     heroUrl: 'assets/img/gif-search/hero.png',
     heroAlt: 'project screenshot',
-    text: 'Post-ironic gentrify shabby chic swag, everyday carry man bun microdosing iceland offal chia vice chambray. Wayfarers selfies lyft, slow-carb before they sold out umami gluten-free tofu polaroid banjo occupy neutra.',
+    text: 'A basic web app to search and view GIF images via the Giphy API.',
     linkUrls: {
       github: 'https://github.com/donaldsonjulia/TIY-GIFSearch',
       projectSite: 'https://donaldsonjulia.github.io/TIY-GIFSearch/'
     },
     tools: [tools.html, tools.css, tools.sass, tools.handlebars, tools.javascript]
   };
-  this.projects = [project1, project2, project3];
+  var project4 = {
+    title: 'Shopular2.0',
+    heroUrl: 'assets/img/shopular/hero.png',
+    heroAlt: 'project screenshot',
+    text: 'An shop inventory management app built with Angular v1.5',
+    linkUrls: {
+      github: 'https://github.com/donaldsonjulia/TIY-Shopular2.0',
+      projectSite: 'https://donaldsonjulia.github.io/TIY-Shopular2.0/'
+    },
+    tools: [tools.angular1, tools.javascript, tools.html, tools.css, tools.sass]
+  };
+  var project5 = {
+    title: 'Potter Quest',
+    heroUrl: 'assets/img/shopular/hero.png',
+    heroAlt: 'project screenshot',
+    text: 'A ',
+    linkUrls: {
+      github: 'https://github.com/donaldsonjulia/TIY-Shopular2.0',
+      projectSite: 'https://donaldsonjulia.github.io/TIY-Shopular2.0/'
+    },
+    tools: [tools.angular1, tools.javascript, tools.html, tools.css, tools.sass]
+  };
+
+
+
+  this.projects = [project1, project2, project3, project4];
 
 }
