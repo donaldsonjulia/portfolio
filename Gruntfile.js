@@ -34,7 +34,7 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
-                    'assets/libs/libs.js': ['node_modules/angular/angular.min.js', 'node_modules/angular-ui-router/release/angular-ui-router.min.js'],
+                    'assets/libs/libs.js': ['node_modules/angular/angular.min.js', 'node_modules/angular-ui-router/release/angular-ui-router.min.js', 'node_modules/angular-animate/angular-animate.min.js'],
                     'app/dist/app.js': ['app/app.module.js', 'app/app.states.js', 'app/components/**/*.js']
                 }
             }
