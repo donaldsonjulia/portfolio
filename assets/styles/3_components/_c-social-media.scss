@@ -1,4 +1,6 @@
 .c-social-media {
+    transition: width .5s ease;
+
     &--nav {
         @include align-items(center);
         @include display(flex);
@@ -69,6 +71,9 @@
             width: 335px;
             float: left;
         }
+        @media screen and (min-width: 1100px) {
+            width: 425px;
+        }
 
         &__icon {
             width: 32px;
@@ -80,13 +85,14 @@
 
             &:first-child {
                 @media screen and (min-width: 700px) {
-                    padding-left: 50px;
+                    padding-left: 50px; /* must match padding-left on menu--home component */
                 }
+
             }
 
             &:last-child {
                 @media screen and (min-width: 700px) {
-                    padding-right: 50px;
+                    padding-right: 50px; /* must match padding-left on menu--home component */
                 }
             }
         }

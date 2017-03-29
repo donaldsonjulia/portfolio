@@ -1,4 +1,6 @@
 .c-menu {
+      transition: width .5s ease;
+
       &__links {
         font-family: 'Overpass Mono';
         list-style: none;
@@ -45,8 +47,12 @@
     &--home {
 
         @media screen and (min-width: 700px) {
-            width: 660px;
+            width: 660px; /* width of .c-home-images at this screen size */
             margin: 0 auto;
+        }
+
+        @media screen and (min-width: 1100px) {
+            width: 775px; /* width of .c-home-images at this screen size */
         }
 
         &__links {
@@ -57,12 +63,17 @@
             @media screen and (min-width: 700px) {
                 width: 100%;
                 flex-direction: column;
-                padding-left: 50px;
+                padding-left: 50px; /* must match padding-left on social media component */
             }
+
 
             li {
                 @media screen and (min-width: 700px) {
                     margin: 10px 0;
+                }
+
+                @media screen and (min-width: 1100px) {
+                  font-size: 20px;
                 }
             }
         }

@@ -1,4 +1,5 @@
 .c-hero-title {
+  transition: all .5s ease;
   position: relative;
   min-width: 200px;
   max-width: 275px;
@@ -6,7 +7,12 @@
   font-family: 'Overpass Mono';
 
   @media screen and (min-width: 700px) {
-    max-width: 660px;
+    max-width: 660px; /* width of .c-home-images at this screen size */
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1100px) {
+    max-width: 775px; /* width of .c-home-images at this screen size */
     width: 100%;
   }
 
@@ -18,7 +24,14 @@
     @media screen and (min-width: 700px) {
       font-size: 26px;
       position: absolute;
-      top: -473px;
+      top: -480px;
+      left: 0px;
+    }
+
+    @media screen and (min-width: 1100px) {
+      font-size: 28px;
+      position: absolute;
+      top: -480px;
       left: 0px;
     }
 
@@ -33,6 +46,13 @@
       font-size: 20px;
       position: absolute;
       top: -5px;
+      right: 0px;
+    }
+
+    @media screen and (min-width: 1100px) {
+      font-size: 22px;
+      position: absolute;
+      top: 28px;
       right: 0px;
     }
 

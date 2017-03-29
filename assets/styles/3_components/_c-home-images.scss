@@ -7,7 +7,11 @@
   }
 
   @media screen and (min-width: 700px) {
-    width: 660px;
+    width: 660px; /* combined width of .c-home-images__photo and .c-home-images__banner at this screen size */
+  }
+
+  @media screen and (min-width: 1100px) {
+    width: 775px; /* combined width of .c-home-images__photo and .c-home-images__banner at this screen size */
   }
 
   &__photo, &__banner, &__logo {
@@ -39,6 +43,13 @@
       right: 0;
       top: 0;
     }
+
+    @media screen and (min-width: 1100px) {
+      height: 464px;
+      width: 350px;
+      right: 0;
+      top: 0;
+    }
   }
 
   &__banner {
@@ -56,9 +67,16 @@
     }
 
     @media screen and (min-width: 700px) {
-      right: 325px;
+      right: 325px; /* width of .c-home-images__photo at this screen size */
       top: 50px;
     }
+
+    @media screen and (min-width: 1100px) {
+      width: 425px;
+      right: 350px; /* width of .c-home-images__photo at this screen size */
+      top: 50px;
+    }
+
   }
 
   &__logo {
@@ -83,6 +101,13 @@
       width: 400px;
       right: 0;
       top: 353px;
+    }
+
+    @media screen and (min-width: 1100px) {
+      height: 149px;
+      width: 450px;
+      right: 0;
+      top: 375px;
     }
 
   }

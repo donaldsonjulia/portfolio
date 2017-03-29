@@ -1,11 +1,12 @@
 .c-hero {
     position: relative;
     min-height: 550px;
-    // @media screen and (min-width: 1300px) {
-    //     transform: scale(1.3);
-    // }
 
-    &__image {
+    @media screen and (min-width: 1100px) {
+      min-height: 600px;
+    }
+
+    &__media {
         top: 15px;
         position: absolute;
         width: 100%;
@@ -47,7 +48,12 @@
     &__menu-wrapper {
 
       @media screen and (min-width: 700px) {
-          width: 660px;
+          width: 660px; /* width of .c-home-images at this screen size */
+          margin: 0 auto;
+      }
+
+      @media screen and (min-width: 1100px) {
+          width: 775px; /* width of .c-home-images at this screen size */
           margin: 0 auto;
       }
     }
