@@ -15,7 +15,7 @@
   &__form {
     @include grid-column;
 
-    @media screen and (min-width: 400px) {
+    @media screen and (min-width: 600px) {
     @include grid-column(10);
     @include grid-shift(1);
   }

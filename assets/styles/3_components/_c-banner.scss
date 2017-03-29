@@ -10,19 +10,27 @@
 
     &__headline {
         width: 80%;
-        margin-bottom: -3px;
-        /* removes gap between svg letters and banner bottom border */
+        margin-bottom: -6px;
+        /* removes small gap between svg letters and banner bottom border */
         margin-right: 10px;
+        margin-left: 10px;
+
         @media screen and (min-width: 500px) {
             width: auto;
         }
 
         svg {
             fill: white;
+            transition: height .2s ease;
 
             @media screen and (min-width: 500px) {
-                height: 110px; /* change min-height of .l-section class if this number changes! */
+                height: 90px; /* change min-height of .l-section class if this number changes! */
                 width: auto;
+            }
+
+            @media screen and (min-width: 650px) {
+              height: 110px; /* change min-height of .l-section class if this number changes! */
+              width: auto;
             }
         }
     }
@@ -30,22 +38,13 @@
     &__headline--large {
       width: 90%;
       @media screen and (min-width: 500px) {
-          width: 90%;
-      }
-      @media screen and (min-width: 650px) {
           width: auto;
-      }
 
-      svg {
-
-          @media screen and (min-width: 500px) {
-              height: auto;
-          }
-
-          @media screen and (min-width: 650px) {
-              height: 110px; /* change min-height of .l-section class if this number changes! */
-              width: auto;
-          }
+      // svg {
+      //     @media screen and (min-width: 500px) {
+      //       height: 90px; /* change min-height of .l-section class if this number changes! */
+      //       max-width: 100%;
+      //     }
       }
 
     }
