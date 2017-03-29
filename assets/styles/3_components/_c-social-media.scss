@@ -21,14 +21,6 @@
             &:hover svg {
                 fill: $nav-action-color;
             }
-
-            &:first-child {
-
-            }
-
-            &:last-child {
-
-            }
         }
     }
 
@@ -42,7 +34,7 @@
 
         &__icon {
           height: 24px;
-          
+
           svg {
             fill: #fff;
             width: 24px;
@@ -51,14 +43,6 @@
 
             &:hover svg {
                 fill: $nav-action-color;
-            }
-
-            &:first-child {
-
-            }
-
-            &:last-child {
-
             }
         }
     }
