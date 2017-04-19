@@ -107,6 +107,6 @@ function workService() {
 
 
 
-  this.projects = [project1, project2, project3, project4];
+  this.projects = [project1, project3, project4];
 
 }
