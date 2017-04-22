@@ -9,5 +9,4 @@ angular
     });
 
 function WorkController() {
-    console.log('work component controller!');
 }

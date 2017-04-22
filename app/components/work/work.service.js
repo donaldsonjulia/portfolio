@@ -51,7 +51,7 @@ function workService() {
 
   var project1 = {
     title: 'All Is Well',
-    heroUrl: 'assets/img/all-is-well/hero.png',
+    heroUrl: './assets/img/all-is-well/hero.png',
     heroAlt: 'project screenshot',
     text: 'A web app that connects therapists with their clients and helps to diagnose behavioral patterns in between appointments',
     linkUrls: {
@@ -62,7 +62,7 @@ function workService() {
   };
   var project2 = {
     title: "Caroline & Ephraim's Wedding",
-    heroUrl: 'assets/img/wedding/hero.png',
+    heroUrl: './assets/img/wedding/hero.png',
     heroAlt: 'project screenshot',
     text: "A clean and simple landing page for my sister's upcoming wedding.",
     linkUrls: {
@@ -73,7 +73,7 @@ function workService() {
   };
   var project3 = {
     title: 'Gif Search',
-    heroUrl: 'assets/img/gif-search/hero.png',
+    heroUrl: './assets/img/gif-search/hero.png',
     heroAlt: 'project screenshot',
     text: 'A basic web app to search and view GIF images via the Giphy API.',
     linkUrls: {
@@ -84,7 +84,7 @@ function workService() {
   };
   var project4 = {
     title: 'Shopular2.0',
-    heroUrl: 'assets/img/shopular/hero.png',
+    heroUrl: './assets/img/shopular/hero.png',
     heroAlt: 'project screenshot',
     text: 'An shop inventory management app built with Angular v1.5',
     linkUrls: {
@@ -95,7 +95,7 @@ function workService() {
   };
   var project5 = {
     title: 'Potter Quest',
-    heroUrl: 'assets/img/shopular/hero.png',
+    heroUrl: './assets/img/shopular/hero.png',
     heroAlt: 'project screenshot',
     text: 'A ',
     linkUrls: {
