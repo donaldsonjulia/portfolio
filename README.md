@@ -1,5 +1,5 @@
-# Personal Site / Portfolio
+# Personal Site
 
-## [juliadonaldson.design](http://juliadonaldson.design)
+## [juliadonaldson.net](http://juliadonaldson.net)
 
-### Constantly evolving, in-progress portfolio website built using AngularJS v.1.6.1
+### Constantly evolving, in-progress personal website built using AngularJS v.1.6.1
